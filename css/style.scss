@@ -1,0 +1,162 @@
+$fourRow: 1100px;
+$twoRow: 500px;
+$oneRow: 300px;
+$logoBreak: 580px;
+$logoAdjust: 450px;
+$logoAdjustTwo: 350px;
+a {
+	text-decoration: none;
+}
+html {
+	background-color:#044874;
+}
+	body {
+		margin: 0px;
+		font-family: raleway;
+	}
+.fallbackText {
+	display: none;
+}
+.header {
+	width:100%;
+	background-color: #378ec7;
+	border-bottom: 3px solid black;
+	position: relative;
+}	
+	.headerLink{
+		position:absolute; 
+		width:100%;
+		height:100%;
+		top:0;
+		left: 0;
+		z-index: 1;
+	}
+	.logoOnePart {
+		width: 100%;
+	}
+		.logoImg {
+			width: 75%;
+			margin-left: 25*.5%;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			@media screen and (max-width: $logoBreak) {
+				display: none;
+			}
+		}
+	.logoThreePart {
+		width: 100%;
+		padding-top: 10px;
+		display: none;
+		@media screen and (max-width: $logoBreak) {
+			display: inline-table;
+		}
+	}      
+		.logoLeft {
+			width:30%;
+			margin-left:5%;
+			padding-top:10px;
+			padding-bottom: 10px;
+			float: left;
+			height: 30px;
+			@media screen and (max-width: $logoAdjust) {
+				width: 20%;
+			}
+			@media screen and (max-width: $logoAdjustTwo) {
+				width: 15%;
+			}
+		}
+		.logoText{
+			float: left;
+			font-size: 50px;
+			color: white;
+			width: 30%;
+			text-align: center;
+			margin-top: -5px;
+			@media screen and (max-width: $logoAdjust) {
+				width: 50%;
+			}
+			@media screen and (max-width: $logoAdjustTwo) {
+				width: 60%;
+			}
+		}
+		.logoRight {
+			width:30%;
+			margin-right:5%;
+			padding-top:10px;
+			padding-bottom: 10px;
+			float: right;
+			height: 30px;
+			@media screen and (max-width: $logoAdjust) {
+				width: 20%;
+			}
+			@media screen and (max-width: $logoAdjustTwo) {
+				width: 15%;
+				
+			}
+		}
+.content{
+	width: 100%;
+}
+	.introMessage{
+		width: 90%;
+		margin-left: 5%; 
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align:center;
+		color:white;
+		font-size: 25px;
+		@media screen and (max-width: $logoBreak) {
+			font-size: 23px;
+		}
+		@media screen and (max-width: $oneRow) {
+			font-size: 20px;
+		}
+	}
+		.boxContainer{
+			width: 90%;
+			margin-left: 5%;
+		}
+			.rowOne, .rowTwo {
+				@media screen and (max-width: $fourRow) and (min-width: $oneRow) {
+					width: 100%;
+					float: left;
+				}
+			}
+			.box{
+				position: relative;
+				width: 40%;
+				float: left;
+				margin: 2%;
+				padding: 2%;
+				background-color: white;
+				border-radius: 5px;
+				@media screen and (min-width: $fourRow) {
+					width: 17%;
+				}
+				@media screen and (max-width: $fourRow) and (min-width: $oneRow) {
+					width: 40%;
+					margin-left: 3.25%;
+				}
+				@media screen and (max-width: $oneRow) {
+					width: 90%;
+					margin-bottom: 10px;
+				}
+			}
+				.boxLink{
+					position:absolute; 
+					width:100%;
+					height:100%;
+					top:0;
+					left: 0;
+					z-index: 1;
+				}
+				.boxImg{
+					width: 100%;
+					height: auto;
+				}
+				.boxText{
+					text-align: center;
+					font-size: 25px;
+					color: black;
+				}
+
