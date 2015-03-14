@@ -160,14 +160,13 @@ body {
 .footer {
   position: relative;
   margin-top: -100px;
-  height: 100px;
   width: 100%; }
 
 .footerBox {
   background-color: #378ec7;
-  height: 100px;
   border-top: 3px solid black;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 3px solid black; }
 
 .buttonBox {
   margin-left: 10%;
@@ -202,18 +201,21 @@ html, body {
 
 .rowOfEight {
   width: 100%;
-  float: left; }
-
-.rowOfFour {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  float: left; }
-
-.rowOfTwo {
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  float: left; }
+  float: left;
+  font-size: 12px; }
+  .rowOfEight.rowOfFour {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float: left; }
+    .rowOfEight.rowOfFour.rowOfTwo {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      float: left; }
+      .rowOfEight.rowOfFour.rowOfTwo.box {
+        width: 40%; }
+        .rowOfEight.rowOfFour.rowOfTwo.box.boxText {
+          font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */
