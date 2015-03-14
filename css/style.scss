@@ -198,6 +198,33 @@ html {
 					border: 2px solid #6d6a6a;
 				}
 			}
+			.FAQ {
+				color: black;
+				background: #98c7e6;
+				border: 2px solid black;
+				&:hover {
+					background: #647b89;
+					border: 2px solid black;
+					color: white;
+				}
+			}
 html, body {
 	height: 100%;
 }
+
+.rowOfEight{
+	width: 100%;
+	float: left;
+}
+	.rowOfFour{
+		width: 50%;
+		margin: 0;
+		padding: 0;
+		float: left;
+	}
+		.rowOfTwo{
+			width: 50%;
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
