@@ -206,8 +206,9 @@ body {
   margin: 1em;
   margin-right: 1em; }
   .button:hover {
-    background: #1d385c;
-    border: 2px solid #6d6a6a; }
+    background: #742225;
+    color: #ffffff;
+    border: 2px solid #ffffff; }
   @media (max-device-width: 600px) {
     .button {
       font-size: 70px;
@@ -219,11 +220,11 @@ body {
 
 .FAQ {
   color: black;
-  background: #98c7e6;
+  background: #dddddd;
   border: 2px solid black; }
   .FAQ:hover {
     background: #647b89;
-    border: 2px solid black;
+    border: 2px solid white;
     color: white; }
 
 html, body {

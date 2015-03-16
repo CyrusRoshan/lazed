@@ -216,8 +216,10 @@ html {
 				margin: 1em;
 				margin-right: 1em;
 				&:hover {
-					background: #1d385c;
-					border: 2px solid #6d6a6a;
+					$colorButton: #ffffff;
+					background:  #742225;
+					color: $colorButton;
+					border: 2px solid $colorButton;
 				}
 				@media (max-device-width: $twoRow) {
 					font-size: 70px;
@@ -230,12 +232,13 @@ html {
 			}
 			.FAQ {
 				color: black;
-				background: #98c7e6;
+				background: #dddddd;
 				border: 2px solid black;
 				&:hover {
 					background: #647b89;
-					border: 2px solid black;
-					color: white;
+					$colorFAQ: white;
+					border: 2px solid $colorFAQ;
+					color: $colorFAQ;
 				}
 			}
 html, body {
