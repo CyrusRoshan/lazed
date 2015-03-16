@@ -58,14 +58,14 @@ html {
 			padding-bottom: 10px;
 			float: left;
 			height: 30px;
-			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
+			@media (max-width: $logoAdjust) {
 				width: 20%;
 			}
 			@media (max-device-width: $logoAdjust) {
 				height: 90px;
 				width: 25%;
 			}
-			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
+			@media (max-width: $logoAdjustTwo) {
 				width: 15%;
 			}
 		}
@@ -76,14 +76,14 @@ html {
 			width: 30%;
 			text-align: center;
 			margin-top: -5px;
-			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
+			@media (max-width: $logoAdjust) {
 				width: 50%;
 			}
 			@media (max-device-width: $logoAdjust) {
 				font-size: 100px;	
 				width: 40%;
 			}
-			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
+			@media (max-width: $logoAdjustTwo) {
 				width: 60%;
 			}
 		}
@@ -94,14 +94,14 @@ html {
 			padding-bottom: 10px;
 			float: right;
 			height: 30px;
-			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
+			@media (max-width: $logoAdjust) {
 				width: 20%;
 			}
 			@media (max-device-width: $logoAdjust) {
 				height: 90px;
 				width: 25%;
 			}
-			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
+			@media (max-width: $logoAdjustTwo) {
 				width: 15%;
 				
 			}
@@ -174,16 +174,20 @@ html {
 					text-align: center;
 					font-size: 25px;
 					color: black;
-					@media (max-device-width: $oneRow) {
-						font-size: 100px;
-					}
 					@media (max-device-width: $twoRow) {
 						font-size: 60px;
 					}
+					@media (max-device-width: $oneRow) {
+						font-size: 100px;
+					}
+
 				}
 .content {
 	overflow: auto;
 	padding-bottom: 100px;
+	@media (max-device-width: $twoRow) {
+		padding-bottom: 200px;
+	}
 }
 .footer {
 	position: relative;
@@ -214,6 +218,14 @@ html {
 				&:hover {
 					background: #1d385c;
 					border: 2px solid #6d6a6a;
+				}
+				@media (max-device-width: $twoRow) {
+					font-size: 70px;
+					padding: 40px;
+					margin: 20px;
+				}
+				@media (max-device-width: $oneRow) {
+					font-size: 100px;
 				}
 			}
 			.FAQ {

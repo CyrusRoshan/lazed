@@ -52,14 +52,14 @@ body {
   padding-bottom: 10px;
   float: left;
   height: 30px; }
-  @media (max-device-width: 450px), (max-width: 450px) {
+  @media (max-width: 450px) {
     .logoLeft {
       width: 20%; } }
   @media (max-device-width: 450px) {
     .logoLeft {
       height: 90px;
       width: 25%; } }
-  @media (max-device-width: 350px), (max-width: 350px) {
+  @media (max-width: 350px) {
     .logoLeft {
       width: 15%; } }
 
@@ -70,14 +70,14 @@ body {
   width: 30%;
   text-align: center;
   margin-top: -5px; }
-  @media (max-device-width: 450px), (max-width: 450px) {
+  @media (max-width: 450px) {
     .logoText {
       width: 50%; } }
   @media (max-device-width: 450px) {
     .logoText {
       font-size: 100px;
       width: 40%; } }
-  @media (max-device-width: 350px), (max-width: 350px) {
+  @media (max-width: 350px) {
     .logoText {
       width: 60%; } }
 
@@ -88,14 +88,14 @@ body {
   padding-bottom: 10px;
   float: right;
   height: 30px; }
-  @media (max-device-width: 450px), (max-width: 450px) {
+  @media (max-width: 450px) {
     .logoRight {
       width: 20%; } }
   @media (max-device-width: 450px) {
     .logoRight {
       height: 90px;
       width: 25%; } }
-  @media (max-device-width: 350px), (max-width: 350px) {
+  @media (max-width: 350px) {
     .logoRight {
       width: 15%; } }
 
@@ -165,16 +165,19 @@ body {
   text-align: center;
   font-size: 25px;
   color: black; }
-  @media (max-device-width: 350px) {
-    .boxText {
-      font-size: 100px; } }
   @media (max-device-width: 600px) {
     .boxText {
       font-size: 60px; } }
+  @media (max-device-width: 350px) {
+    .boxText {
+      font-size: 100px; } }
 
 .content {
   overflow: auto;
   padding-bottom: 100px; }
+  @media (max-device-width: 600px) {
+    .content {
+      padding-bottom: 200px; } }
 
 .footer {
   position: relative;
@@ -205,6 +208,14 @@ body {
   .button:hover {
     background: #1d385c;
     border: 2px solid #6d6a6a; }
+  @media (max-device-width: 600px) {
+    .button {
+      font-size: 70px;
+      padding: 40px;
+      margin: 20px; } }
+  @media (max-device-width: 350px) {
+    .button {
+      font-size: 100px; } }
 
 .FAQ {
   color: black;
