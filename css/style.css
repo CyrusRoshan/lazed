@@ -101,7 +101,7 @@ body {
   @media screen and (max-width: 580px) {
     .introMessage {
       font-size: 23px; } }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 350px) {
     .introMessage {
       font-size: 20px; } }
 
@@ -109,7 +109,7 @@ body {
   width: 90%;
   margin-left: 5%; }
 
-@media screen and (max-width: 1100px) and (min-width: 300px) {
+@media screen and (max-width: 1100px) and (min-width: 350px) {
   .rowOne, .rowTwo {
     width: 100%;
     float: left; } }
@@ -127,11 +127,11 @@ body {
   @media screen and (min-width: 1100px) {
     .box {
       width: 17%; } }
-  @media screen and (max-width: 1100px) and (min-width: 300px) {
+  @media screen and (max-width: 1100px) and (min-width: 350px) {
     .box {
       width: 40%;
       margin-left: 3.25%; } }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 350px) {
     .box {
       width: 90%;
       margin-bottom: 10px; } }
