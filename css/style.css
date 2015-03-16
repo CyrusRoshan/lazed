@@ -33,7 +33,7 @@ body {
   margin-left: 12.5%;
   padding-top: 10px;
   padding-bottom: 5px; }
-  @media screen and (max-width: 580px) {
+  @media (max-device-width: 580px), (max-width: 580px) {
     .logoImg {
       display: none; } }
 
@@ -41,7 +41,7 @@ body {
   width: 100%;
   padding-top: 10px;
   display: none; }
-  @media screen and (max-width: 580px) {
+  @media (max-device-width: 580px), (max-width: 580px) {
     .logoThreePart {
       display: inline-table; } }
 
@@ -52,10 +52,14 @@ body {
   padding-bottom: 10px;
   float: left;
   height: 30px; }
-  @media screen and (max-width: 450px) {
+  @media (max-device-width: 450px), (max-width: 450px) {
     .logoLeft {
       width: 20%; } }
-  @media screen and (max-width: 350px) {
+  @media (max-device-width: 450px) {
+    .logoLeft {
+      height: 90px;
+      width: 25%; } }
+  @media (max-device-width: 350px), (max-width: 350px) {
     .logoLeft {
       width: 15%; } }
 
@@ -66,10 +70,14 @@ body {
   width: 30%;
   text-align: center;
   margin-top: -5px; }
-  @media screen and (max-width: 450px) {
+  @media (max-device-width: 450px), (max-width: 450px) {
     .logoText {
       width: 50%; } }
-  @media screen and (max-width: 350px) {
+  @media (max-device-width: 450px) {
+    .logoText {
+      font-size: 100px;
+      width: 40%; } }
+  @media (max-device-width: 350px), (max-width: 350px) {
     .logoText {
       width: 60%; } }
 
@@ -80,10 +88,14 @@ body {
   padding-bottom: 10px;
   float: right;
   height: 30px; }
-  @media screen and (max-width: 450px) {
+  @media (max-device-width: 450px), (max-width: 450px) {
     .logoRight {
       width: 20%; } }
-  @media screen and (max-width: 350px) {
+  @media (max-device-width: 450px) {
+    .logoRight {
+      height: 90px;
+      width: 25%; } }
+  @media (max-device-width: 350px), (max-width: 350px) {
     .logoRight {
       width: 15%; } }
 
@@ -98,25 +110,25 @@ body {
   text-align: center;
   color: white;
   font-size: 25px; }
-  @media screen and (max-width: 580px) {
+  @media (max-device-width: 600px) {
     .introMessage {
-      font-size: 23px; } }
-  @media screen and (max-width: 350px) {
+      font-size: 40px; } }
+  @media (max-device-width: 350px) {
     .introMessage {
-      font-size: 20px; } }
+      font-size: 50px; } }
 
 .boxContainer {
   width: 90%;
   margin-left: 5%; }
 
-@media screen and (max-width: 1100px) and (min-width: 350px) {
+@media (max-device-width: 1100px) {
   .rowOne, .rowTwo {
     width: 100%;
     float: left; } }
 
 .box {
   position: relative;
-  width: 40%;
+  width: 17%;
   float: left;
   margin: 2%;
   padding: 2%;
@@ -124,16 +136,17 @@ body {
   border-radius: 5px; }
   .box:hover {
     background-color: #9eccea; }
-  @media screen and (min-width: 1100px) {
+  @media (max-device-width: 1100px), (max-width: 1100px) {
     .box {
       width: 17%; } }
-  @media screen and (max-width: 1100px) and (min-width: 350px) {
+  @media (max-device-width: 600px), (max-width: 600px) {
     .box {
       width: 40%;
       margin-left: 3.25%; } }
-  @media screen and (max-width: 350px) {
+  @media (max-device-width: 350px), (max-width: 350px) {
     .box {
       width: 90%;
+      font-size: 30px;
       margin-bottom: 10px; } }
 
 .boxLink {
@@ -152,6 +165,12 @@ body {
   text-align: center;
   font-size: 25px;
   color: black; }
+  @media (max-device-width: 350px) {
+    .boxText {
+      font-size: 100px; } }
+  @media (max-device-width: 600px) {
+    .boxText {
+      font-size: 60px; } }
 
 .content {
   overflow: auto;

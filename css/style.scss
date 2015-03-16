@@ -1,5 +1,5 @@
 $fourRow: 1100px;
-$twoRow: 500px;
+$twoRow: 600px;
 $oneRow: 350px;
 $logoBreak: 580px;
 $logoAdjust: 450px;
@@ -39,7 +39,7 @@ html {
 			margin-left: 25*.5%;
 			padding-top: 10px;
 			padding-bottom: 5px;
-			@media screen and (max-width: $logoBreak) {
+			@media (max-device-width: $logoBreak), (max-width: $logoBreak) {
 				display: none;
 			}
 		}
@@ -47,10 +47,10 @@ html {
 		width: 100%;
 		padding-top: 10px;
 		display: none;
-		@media screen and (max-width: $logoBreak) {
+		@media (max-device-width: $logoBreak), (max-width: $logoBreak) {
 			display: inline-table;
 		}
-	}      
+	}   
 		.logoLeft {
 			width:30%;
 			margin-left:5%;
@@ -58,10 +58,14 @@ html {
 			padding-bottom: 10px;
 			float: left;
 			height: 30px;
-			@media screen and (max-width: $logoAdjust) {
+			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
 				width: 20%;
 			}
-			@media screen and (max-width: $logoAdjustTwo) {
+			@media (max-device-width: $logoAdjust) {
+				height: 90px;
+				width: 25%;
+			}
+			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
 				width: 15%;
 			}
 		}
@@ -72,10 +76,14 @@ html {
 			width: 30%;
 			text-align: center;
 			margin-top: -5px;
-			@media screen and (max-width: $logoAdjust) {
+			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
 				width: 50%;
 			}
-			@media screen and (max-width: $logoAdjustTwo) {
+			@media (max-device-width: $logoAdjust) {
+				font-size: 100px;	
+				width: 40%;
+			}
+			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
 				width: 60%;
 			}
 		}
@@ -86,10 +94,14 @@ html {
 			padding-bottom: 10px;
 			float: right;
 			height: 30px;
-			@media screen and (max-width: $logoAdjust) {
+			@media (max-device-width: $logoAdjust), (max-width: $logoAdjust) {
 				width: 20%;
 			}
-			@media screen and (max-width: $logoAdjustTwo) {
+			@media (max-device-width: $logoAdjust) {
+				height: 90px;
+				width: 25%;
+			}
+			@media (max-device-width: $logoAdjustTwo), (max-width: $logoAdjustTwo) {
 				width: 15%;
 				
 			}
@@ -105,11 +117,11 @@ html {
 		text-align:center;
 		color:white;
 		font-size: 25px;
-		@media screen and (max-width: $logoBreak) {
-			font-size: 23px;
+		@media (max-device-width: $twoRow) {
+			font-size: 40px;
 		}
-		@media screen and (max-width: $oneRow) {
-			font-size: 20px;
+		@media (max-device-width: $oneRow) {
+			font-size: 50px;
 		}
 	}
 		.boxContainer{
@@ -117,14 +129,14 @@ html {
 			margin-left: 5%;
 		}
 			.rowOne, .rowTwo {
-				@media screen and (max-width: $fourRow) and (min-width: $oneRow) {
+				@media (max-device-width: $fourRow) {
 					width: 100%;
 					float: left;
 				}
 			}
 			.box{
 				position: relative;
-				width: 40%;
+				width: 17%;
 				float: left;
 				margin: 2%;
 				padding: 2%;
@@ -133,15 +145,16 @@ html {
 					background-color: #9eccea;
 				}
 				border-radius: 5px;
-				@media screen and (min-width: $fourRow) {
+				@media (max-device-width: $fourRow), (max-width: $fourRow) {
 					width: 17%;
 				}
-				@media screen and (max-width: $fourRow) and (min-width: $oneRow) {
+				@media (max-device-width: $twoRow), (max-width: $twoRow) {
 					width: 40%;
 					margin-left: 3.25%;
 				}
-				@media screen and (max-width: $oneRow) {
+				@media (max-device-width: $oneRow), (max-width: $oneRow) {
 					width: 90%;
+					font-size: 30px;
 					margin-bottom: 10px;
 				}
 			}
@@ -161,6 +174,12 @@ html {
 					text-align: center;
 					font-size: 25px;
 					color: black;
+					@media (max-device-width: $oneRow) {
+						font-size: 100px;
+					}
+					@media (max-device-width: $twoRow) {
+						font-size: 60px;
+					}
 				}
 .content {
 	overflow: auto;
@@ -234,3 +253,4 @@ html, body {
 		}
 	}
 }
+
