@@ -118,10 +118,7 @@ html {
 		color:white;
 		font-size: 25px;
 		@media (max-device-width: $twoRow) {
-			font-size: 40px;
-		}
-		@media (max-device-width: $oneRow) {
-			font-size: 50px;
+			font-size: 52px;
 		}
 	}
 		.boxContainer{
@@ -156,6 +153,10 @@ html {
 					width: 90%;
 					font-size: 30px;
 					margin-bottom: 10px;
+				}
+				@media (max-device-width: $twoRow) {
+					border-radius: 20px;
+					margin-bottom: 50px;
 				}
 			}
 				.boxLink{
@@ -220,14 +221,19 @@ html {
 					background:  #742225;
 					color: $colorButton;
 					border: 2px solid $colorButton;
+					@media (max-device-width: $twoRow) {
+					border: 10px solid $colorButton;
+				}
 				}
 				@media (max-device-width: $twoRow) {
 					font-size: 70px;
 					padding: 40px;
 					margin: 20px;
+					border-radius: 20px;
+					border: 10px solid black;
 				}
 				@media (max-device-width: $oneRow) {
-					font-size: 100px;
+					font-size: 90px;
 				}
 			}
 			.FAQ {
@@ -239,6 +245,16 @@ html {
 					$colorFAQ: white;
 					border: 2px solid $colorFAQ;
 					color: $colorFAQ;
+					@media (max-device-width: $twoRow) {
+					border: 10px solid $colorFAQ;
+				}
+				}
+				@media (max-device-width: $twoRow) {
+					border: 10px solid black;
+				}
+				@media (max-device-width: $oneRow) {
+					font-size: 90px;
+					border: 10px solid black;
 				}
 			}
 html, body {
