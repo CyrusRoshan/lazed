@@ -137,9 +137,9 @@ html {
 				float: left;
 				margin: 2%;
 				padding: 2%;
-				background-color: white;
+				background-color: #9eccea;
 				&:hover{
-					background-color: #9eccea;
+					background-color: white;
 				}
 				border-radius: 5px;
 				@media (max-device-width: $fourRow), (max-width: $fourRow) {

@@ -129,10 +129,10 @@ body {
   float: left;
   margin: 2%;
   padding: 2%;
-  background-color: white;
+  background-color: #9eccea;
   border-radius: 5px; }
   .box:hover {
-    background-color: #9eccea; }
+    background-color: white; }
   @media (max-device-width: 1100px), (max-width: 1100px) {
     .box {
       width: 17%; } }
